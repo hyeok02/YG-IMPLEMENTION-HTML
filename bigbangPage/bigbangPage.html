@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YG ENTERTAINMENT </title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bigbangPage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+<body>
+        <nav>
+            <div class="line"></div>
+            <div class="nav1">
+                <span class="lan">KOREAN</span>
+                <span class="lan">ENGLISH</span>
+                <span class="lan">JAPANESE</span>
+                <span class="lan">CHINESE</span>
+            </div>
+            <div class="nav2">
+                <a href="../main/main.html"><div class="logo"><img src="images/logo.PNG" alt=""></div></a>
+                <span class="menu"><a href="https://www.ygfamily.com/ko/news/notice">NOTICE</a></span>
+                <span class="menu"><a href="https://www.ygfamily.com/ko/news/report">NEWS</a></span>
+                <span class="menu"><a href="./Artists.html">ARTISTS</a></span>
+                <span class="menu"><a href="https://www.ygfamily.com/ko/actors/list">ACTORS</a></span>
+                <span class="menu"><a href="https://www.ygfamily.com/media/MList.asp?LANGDIV=E">MULTIMEDIA</a></span>
+                <span class="menu"><a href="https://www.ygselect.com/">SELECT</a></span>
+                <span class="menu"><a href="https://www.ygfamily.com/ko/sustainability/with">WITH</a></span>
+                <span class="menu"><a href="https://www.yg-audition.com/">AUDITION</a></span> 
+            </div>
+        </nav>
+
+    <section>
+        <div id="container">
+            <div id="content">
+                <!-- 헤더 부분 -->
+                <div class="headerArea">
+                    <h1 class="title">ARTISTS</h1>
+                    <div class="locations">
+                        <ol>
+                            <li class="home"> <a href="../main/main.html">home</a></li>
+                            <li class="artist"> <a href="../ArtistPage/Artists.html">&lt; Artists</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- 아티스트 배너 -->
+                <div class="artistBanner">
+                    <button class="left"><i class="fas fa-chevron-left"></i></button>
+                    <div class="artistImg">
+                        <div class="photoList">
+                            <div class="artist"><div class="on"><img src="images/bu_photonav_on.gif" alt=""></div><img src="images/img_bigbang.jpg" class="groupImg"><div class="groupName">BIGBANG</div></div>
+                            <div class="artist"><img src="images/img_blackpink(3).jpg" class="groupImg"><div class="groupName">BLACKPINK</div></div>
+                            <div class="artist"><img src="images/img_winner(7).jpg" class="groupImg"><div class="groupName">WINNER</div></div>
+                            <div class="artist"><img src="images/img_profile(18).jpg" class="groupImg"><div class="groupName">AKMU</div></div>
+                            <div class="artist"><img src="images/img_TREASURE(4).jpg" class="groupImg"><div class="groupName">TREASURE</div></div>
+                            <div class="artist"><img src="images/img_SECHSKIES(2).jpg" class="groupImg"><div class="groupName">SECHSKIES</div></div>
+                        </div>
+                    </div>
+                    <button class="right"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <!-- 아티스트 소개 -->
+                <div class="pageArtist">
+                    <h2 class="artistName">BIGBANG</h2>
+                    <div class="artistNav">
+                        <ul>
+                            <li><a href="#"><span>MAIN</span></a></li>
+                            <li><a href="#"><span>ABOUT</span></a></li>
+                            <li><a href="#"><span>NEWS</span></a></li>
+                            <li><a href="#"><span>NOTICE</span></a></li>
+                            <li><a href="#"><span>ALBUM</span></a></li>
+                            <li><a href="#"><span>DVD</span></a></li>
+                            <li><a href="#"><span>MV</span></a></li>
+                            <li><a href="#"><span>GALLERY</span></a></li>
+                            <li><a href="#"><span>DOWNLOAD</span></a></li>
+                            <li><a href="#"><span>EVENT</span></a></li>
+                            <li><a href="#"><span>SCHEDULE</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="color:black; border-color:black; border-width:1.5px;">
+                <!-- 곡 소개 -->
+                <div class="titleSong">
+                    <h3 class="artistName">B I G B A N G</h3>
+                    <p class="songName">봄여름가을겨울<br>(Still Life)</p>
+                </div>
+                <div class="artistPhoto">
+                    <img src="https://artist.ygfamily.com/ARTISTS/BIGBANG/music/still-life/img/main.png" alt="아티스트 사진">
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eN5mG_yMDiM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen class="MV"></iframe>
+                <div class="language">
+                    <button class="korean" onclick="showKorean()">K</button>
+                    <button class="english" onclick="showEnglish()">E</button>
+                    <button class="chinese" onclick="showChinese()">C</button>
+                    <button class="japanese" onclick="showJapanese()">J</button>
+                </div>
+                <article class="songInfo">
+                    <div class="KoreanInfo" id="KoreanInfoId">
+                        <p class="titleInfo" style="font-weight: 700;">[빅뱅, 그 찬란한 이름과 그들의 사게절]</p>
+                        <p>빅뱅의 싱글 '꽃 길' 발표 이 후 약 4년 만에 신곡 '봄여름가을겨울 (still life)'로 돌아왔다. </p>
+                        <p>빅뱅의 '봄여름가을겨울'은 오가닉하고 따뜻한 밴드 사운드를 기반으로 한 곡으로, 타임리스한 멜로디에 덧 붙여진 아름다운 가사가 인상적인 곡이다.</p>
+                        <p>봄에서 겨울까지 이어지는 시간의 흐름과 계절의 순환 을 담은 '봄여름가을겨울'의 도입 가사는 듣는 이들로 하여금 개개인의 지나온 인생에 대해 생각해 보게 하는 매력이
+                            있다. <br>
+                            빅뱅 멤버들이 가창을 통해 자아내는 청춘에 대한 회 상은, 마치 우리 모두가 경험한 청춘에 대하여 말하는 듯 평화롭고 아름답게 흐르며 듣는 이들을 위안한다. <br>
+                            후반부로 전개되며 드러나는 감성적인 코드 진행과 도입부를 여는 담백한 기타 리프, 그리고 이를 따뜻하게 받쳐주는 편곡 요소들로 이뤄진 빅뱅의 '봄여름가을겨울'은 한
+                            시대의 '클래식'으로 남기에 부족함이 없을 것 으로 보인다.</p>
+                        <p>많은 이들이 너무도 기다려온 "빅뱅". <br>
+                            그들이 세상에 선보이는 '봄여름가을겨울'은 많은 사람들로 하여금 마음에 감동과 위안을 주는 곡으로 오랜 시간 기억될 것이다.</p>
+                    </div>
+                    <div class="EnglishInfo" id="EnglishInfoId">
+                        <p style="font-weight: 700;">[BIGBANG, the everlasting title and their seasons]</p>
+                        <p>BIGBANG has comeback with ‘Still Life’ in about 4 years since they released their last single ‘FLOWER ROAD’. </p>
+                        <p>BIGBANG’s ‘Still Life’ is based on an organic yet warm band sound, with beautiful lyrics on top of timeless melodies. </p>
+                        <p>The introduction lyrics of ‘Still Life’ which portray the nature and cycle of time and seasons, allow listeners to think about their past. The peaceful recollection of BIGBANG members’ youth narrated by their voices touches the hearts of people as if they’re talking about the beautiful memories of youth experienced by everyone. </p>
+                        <p>The sentimental codes and simple guitar riffs that open up the second part of the song, along with the warm arrangements that support the sound, make it more than enough for BIGBANG’s ‘Still Life’ to be left as a ‘classic’ song of a generation. </p>
+                        <p>So many people have been waiting for “BIGBANG”.<br>
+                            ‘Still Life’, which they’ll unveil to the world, will be forever remembered as a song that comforts and touches the hearts of many people for a long time. </p>
+                    </div>
+                    <div class="ChineseInfo" id="ChineseInfoId">
+                        <p style="font-weight: 700;">[BIGBANG,那个灿烂的名字和他们的四季]</p>
+                        <p>BIGBANG发行单曲《Flower Road》后时隔约四年携新曲《Still Life》回归。</p>
+                        <p>BIGBANG的新曲《Still Life》是一首以有机而温暖的乐队演奏声为基础的歌曲,在永恒的旋律中添加了唯美的歌词给人以深刻的印象。</p>
+                        <p>《Still Life》歌词的导入部分讲述了从春天到冬天时间的流逝和季节的循环,歌曲的魅力就在于让人听过之后会想到自己走过的人生路。<br>
+							BIGBANG成员们通过歌唱唤起了人们对青春的回忆,像是在诉说我们所有人经历过的青春一样，平静而优美的旋律流淌在心间，给人们带来了安慰。<br>
+						歌曲后半部分突出的抒情色彩,打开导入部分的淡淡的吉他演奏,还有与之相衬托的温暖编曲要素,由这些特色构成的BIGBANG歌曲《Still Life》想必会成为一个时代的“经典”。</p>
+                        <p>让众人期待已久的“BIGBANG”。<br>
+							他们向世人展现的《Still Life》是一首能带给很多人感动和安慰的歌曲,将会长久地留在人们的记忆中。
+						</p>
+                    </div>
+                    <div class="JapaneseInfo" id="JapaneseInfoId">
+                        <p style="font-weight: 700;">[BIGBANG，那个灿烂的名字和他们的四季]</p>
+                        <p>BIGBANG发行单曲《Flower Road》后时隔约四年携新曲《Still Life》回归。</p>
+                        <p>BIGBANG的新曲《Still Life》是一首以有机而温暖的乐队演奏声为基础的歌曲，在永恒的旋律中添加了唯美的歌词给人以深刻的印象。</p>
+                        <p>《Still Life》歌词的导入部分讲述了从春天到冬天时间的流逝和季节的循环，歌曲的魅力就在于让人听过之后会想到自己走过的人生路。<br>
+							BIGBANG成员们通过歌唱唤起了人们对青春的回忆，像是在诉说我们所有人经历过的青春一样，平静而优美的旋律流淌在心间，给人们带来了安慰。<br>
+						歌曲后半部分突出的抒情色彩，打开导入部分的淡淡的吉他演奏，还有与之相衬托的温暖编曲要素，由这些特色构成的BIGBANG歌曲《Still Life》想必会成为一个时代的“经典”。</p>
+                        <p>让众人期待已久的“BIGBANG”。<br>
+							他们向世人展现的《Still Life》是一首能带给很多人感动和安慰的歌曲，将会长久地留在人们的记忆中。
+						</p>
+                    </div>
+                </article>
+                <div class="songImg">
+                    <img src="https://artist.ygfamily.com/ARTISTS/BIGBANG/music/still-life/img/ds.jpg" alt="타이틀 곡">
+                </div>
+                <div class="service">
+                    <div class="option listen">
+                        <p>LISTEN ON</p>
+                        <img src="/blackpinkPage/images/btn_photonav_next.gif" alt="드랍다운 이미지" class="listenImg">
+                        <div class="drop Box1">
+                            <ul class="dropdownMenu">
+                                <li>SPOTIFY</li>
+                                <li>APPLE MUSIC</li>
+                                <li>MELON</li>
+                                <li>GENIE</li>
+                                <li>VIBE</li>
+                                <li>FLO</li>
+                                <li>BUGS</li>
+                                <li>YOUTUBE MUSIC</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="option buy">
+                        <p>BUY NOW</p>
+                        <img src="/blackpinkPage/images/btn_photonav_next.gif" alt="드랍다운 이미지" class="buyImg">
+                        <div class="drop Box2">
+                            <ul class="dropdownMenu">
+                                <li>YG SELECT (KR)</li>
+                                <li>YG SELECT (EN)</li>
+                                <li>YG SELECT (JP)</li>
+                                <li>YG SELECT (CH)</li>
+                                <li>YG SELECT (TH)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./bigbangPage.js"></script>
+</body>
+</html>

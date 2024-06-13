@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 910px;
+    margin: 0 auto;
+}
+
+a:link { 
+    color: #737373;
+    text-decoration: none;
+}
+
+a { 
+    color: #737373; 
+    text-decoration: none;
+    color: inherit;
+    text-decoration:none;
+}
+
+
+/*nav*/
+
+.line{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 910px;
+}
+
+.nav1{
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-left:655px;
+    margin-bottom: 20px;
+    gap: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.lan {
+    font-size: 10px;
+    color: #C8C8C8;
+    cursor: pointer;
+}
+
+.lan.selected,
+.lan:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.menu{
+    font-size: 16px;
+    padding-top: 25px;
+    color : #282828;
+}
+
+.menu:hover{
+    color: #BE0028 !important;
+    cursor: pointer;
+}
+/* .menu::selection {
+    color: #BE0028 !important;
+} */
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 137px;
+    height: 50px;
+    margin-right: 150px;
+}
+
+.nav2{
+    gap: 20px;
+    flex-grow: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    flex-direction: row;
+    height: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #282828;
+    word-break: break-all;
+    margin-bottom: 15px;
+}
+
+.headerArea {
+    border-top: 1px solid #ababab;
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
+    /* width: 910px; */
+}
+.headerArea .title {
+    float: left;
+}
+.headerArea .locations {
+    float: right;
+}
+.locations ol {
+    list-style-type: none;
+    color: #282828;
+    padding-right: 6px;
+}
+.locations li {
+    display: inline-block;
+    font-size: 11px;
+}
+.locations .home {
+    /* text-decoration: none; */
+    color: #282828;
+    padding-right: 10px;
+}
+.artistBanner {
+    clear: both;
+    height: 200px;
+    display: flex;
+    position: relative;
+}
+.artistBanner .artistImg {
+    width: 800px;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+
+}
+.artistImg .photoList {
+    width: 800px;
+    overflow: hidden;  
+}
+.artist:hover{
+    cursor: pointer;
+}
+.artist{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;  
+}
+.groupImg{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.photoList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.artist>img{
+    width: 103x;
+    height: 103px;
+}
+.groupName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10px;
+    margin-top: 1px;
+    background-color:black;
+    color: white;
+    width: 105px;
+    height: 25px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.photoList a {
+    overflow: hidden;
+    text-decoration: none;
+}
+.photoList img {
+    width: 100%;
+}
+.artistBanner button {
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
+.artistBanner .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.artistName {
+    color: black;
+    font-size: 3rem;
+}
+.artistNav {
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+.artistNav ul {
+    padding-top: 10px;
+    height: 40px;
+    list-style: none;
+    text-align: center;
+    background-color: gainsboro;
+    border: 0.5px solid black;
+}
+.artistNav li {
+    display: inline-block;
+    font-size: 4px;
+}
+.artistNav li a::after {
+    margin-left: 10px;
+    content: '|';
+    font-size: 8px;
+    columns: #C8C8C8 !important;
+}
+.artistNav a {
+    color: #282828;
+    cursor: pointer;
+    margin: 4px;
+}
+.artistNav span:hover, .artistNav span:focus {
+    color: red;
+}
+.artistNav li:last-child a::after {
+    display: none;
+}
+
+.titleSong {
+    margin-top: 80px;
+}
+.titleSong .artistName {
+    margin: 0;
+    text-align: center;
+}
+.titleSong h3 {
+    margin: 0;
+}
+.titleSong .songName {
+    /* padding-top: 5px; */
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.artistPhoto {
+    text-align: center;
+}
+
+.MV {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.language {
+    text-align: center;
+    margin-top: 60px;
+}
+.language button {
+    background-color: inherit;
+    border: 2px solid transparent;
+    color: gray;
+    width: 30px;
+    margin-right: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 5px;
+}
+.language button:hover {
+    padding: 5px;
+    border: 1px solid black;
+    color: black;
+}
+.language button:focus {
+    border: 1px solid #000;
+    color: black;
+}
+
+
+.songInfo {
+    margin-top: 50px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+}
+.songInfo p {
+    margin-bottom: 25px;
+    line-height: 1.8em;
+}
+
+.songImg {
+    text-align: center;
+    margin-top: 80px;
+}
+.songImg img {
+    box-shadow: 0px 0px 35px #ccc;
+    width: 300px;
+    height: 300px;
+}
+
+.service {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.option {
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.option p {
+    position: absolute;
+    left: 5%;
+}
+
+.option img {
+    position: absolute;
+    right: 5%;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.listen {
+    position: relative;
+}
+
+.buy {
+    margin-top: 15px;
+    position: relative;
+}
+
+/* dropdown */
+.Box1, .Box2 {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    z-index: 1;
+    display: none;
+}
+
+.drop ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.drop li {
+    cursor: pointer;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 5%;
+}
+
+.drop li:hover {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 910px;
+    margin: 0 auto;
+}
+
+
+a:link { 
+    color: #737373;
+    text-decoration: none;
+}
+
+a { 
+    color: #737373; 
+    text-decoration: none;
+    color: inherit;
+    text-decoration:none;
+}
+
+
+/*nav*/
+
+.line{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 910px;
+}
+
+.nav1{
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-left:655px;
+    margin-bottom: 20px;
+    gap: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.lan {
+    font-size: 10px;
+    color: #C8C8C8;
+    cursor: pointer;
+}
+
+.lan.selected,
+.lan:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.menu{
+    font-size: 16px;
+    padding-top: 25px;
+    color : #282828;
+}
+
+.menu:hover{
+    color: #BE0028 !important;
+    cursor: pointer;
+}
+/* .menu::selection {
+    color: #BE0028 !important;
+} */
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 137px;
+    height: 50px;
+    margin-right: 150px;
+}
+
+.nav2{
+    gap: 20px;
+    flex-grow: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    flex-direction: row;
+    height: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #282828;
+    word-break: break-all;
+    margin-bottom: 15px;
+}
+
+
+.headerArea {
+    border-top: 1px solid #ababab;
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
+    /* width: 910px; */
+}
+.headerArea .title {
+    float: left;
+}
+.headerArea .locations {
+    float: right;
+}
+.locations ol {
+    list-style-type: none;
+    color: #282828;
+    padding-right: 6px;
+}
+.locations li {
+    display: inline-block;
+    font-size: 11px;
+}
+.locations .home {
+    /* text-decoration: none; */
+    color: #282828;
+    padding-right: 10px;
+}
+.artistBanner {
+    clear: both;
+    height: 200px;
+    display: flex;
+    position: relative;
+}
+.artistBanner .artistImg {
+    width: 800px;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+
+}
+.artistImg .photoList {
+    width: 800px;
+    overflow: hidden;  
+}
+.artist:hover{
+    cursor: pointer;
+}
+.artist{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;  
+}
+.groupImg{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.photoList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.artist>img{
+    width: 103x;
+    height: 103px;
+}
+.groupName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10px;
+    margin-top: 1px;
+    background-color:black;
+    color: white;
+    width: 105px;
+    height: 25px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.photoList a {
+    overflow: hidden;
+    text-decoration: none;
+}
+.photoList img {
+    width: 100%;
+}
+.artistBanner button {
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    height: 150px;
+    background-color:  rgb(30, 30, 30);
+    color: white;
+    font-size: 50px;
+}
+.artistBanner .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.artistName {
+    color: black;
+    font-size: 3rem;
+}
+.artistNav {
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+.artistNav ul {
+    padding-top: 10px;
+    height: 40px;
+    list-style: none;
+    text-align: center;
+    background-color: gainsboro;
+    border: 0.5px solid black;
+}
+.artistNav li {
+    display: inline-block;
+    font-size: 4px;
+}
+.artistNav li a::after {
+    margin-left: 10px;
+    content: '|';
+    font-size: 8px;
+    columns: #C8C8C8 !important;
+}
+.artistNav a {
+    color: #282828;
+    cursor: pointer;
+    margin: 4px;
+}
+.artistNav span:hover, .artistNav a:focus {
+    color: red;
+}
+.artistNav li:last-child a::after {
+    display: none;
+}
+
+.titleSong{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color:#f2f2f2;
+}
+
+hr{
+    margin:0 auto;
+}
+
+.MV {
+    width: 100%;
+    height: 500px;
+    margin:0 auto;
+}
+
+.albumInfo{
+    padding-top: 100px;
+    background-color: #f2f2f2;
+}
+
+.langBtn{
+    font-family: 'Noto Serif KR', serif;
+    display: flex;
+    justify-content: center;
+    color:#e488a1;
+    gap: 30px;
+}
+
+.langBtn.selected {
+    border: 1px solid #e488a1;
+}
+
+.Korean2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.Korean2:hover{
+    cursor: pointer;
+}
+
+
+.Japanese2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.Japanese2:hover{
+    
+    cursor: pointer;
+}
+
+
+.English2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.English2:hover{
+    
+    cursor: pointer;
+}
+
+
+.Chinese2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.Chinese2:hover{
+    
+    cursor: pointer;
+}
+
+.information{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 1.8em;
+    color: #444;
+}
+
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover>img{
+    margin-top: 50px;
+    width: 329px;
+    height: 329px;
+    box-shadow: 5px 5px 10px #c4c4c4;
+}
+
+.tracklist{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tracklist>img{
+    width: 813px;
+    height: 537px;
+}
+
+.mainimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.mainimg>img{
+    width: 910px;
+    height: 1036px;
+}
+
+.more{
+    font-family: 'Titillium Web', sans-serif;
+    color: #282828;
+    display:flex;
+    justify-content: center;
+    font-size: 2.4em;
+}
+
+.dropdown{
+    position : relative;
+    display : inline-block;
+}
+
+
+.dropbtn{
+    font-family: 'Noto Serif KR', serif;
+    border: none;
+    background-color: #e488a1;
+    font-weight: 400;
+    color : white;
+    padding : 12px;
+    width :330px;
+    text-align: left;
+    cursor : pointer;
+    font-size : 20px;
+}
+.dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+    font-weight: 400;
+    background-color: #222;
+    min-width : 200px;
+}
+
+.dropdown-content a{
+    width: 330px;
+    display : block;
+    text-decoration : none;
+    color :  white;
+    font-size: 20px;
+    font-family: 'Noto Serif KR', serif;
+    padding : 12px 20px;
+}
+
+.dropdown-content a:hover{
+    background-color : #ececec;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.options{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.blackpinkLogo>img{
+    width: 150px;
+    height: 40px;
+}
+.blackpinkLogo{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.blackpinkLogo:hover{
+    cursor:pointer;
+}

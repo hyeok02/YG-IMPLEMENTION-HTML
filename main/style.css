@@ -1,0 +1,402 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: #737373;
+    text-decoration: none;
+}
+
+a {
+    color: #737373;
+    text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* nav */
+.line {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 910px;
+}
+
+.nav1 {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 655px;
+    margin-bottom: 20px;
+    gap: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.lan {
+    font-size: 10px;
+    color: #c8c8c8;
+    cursor: pointer;
+}
+
+.lan.selected,
+.lan:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.menu {
+    font-size: 16px;
+    padding-top: 25px;
+    color: #282828;
+}
+
+.menu:hover {
+    color: #be0028 !important;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 137px;
+    height: 50px;
+    margin-right: 150px;
+}
+
+.nav2 {
+    gap: 20px;
+    flex-grow: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    flex-direction: row;
+    height: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #282828;
+    word-break: break-all;
+    margin-bottom: 15px;
+}
+
+/* main */
+main {
+    padding-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    display: flex;
+    max-width: 910px;
+    max-height: 450px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.banner.active {
+    opacity: 1;
+}
+
+/*표제목*/
+.subject{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -13%;
+    font-size: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+.NOTICE{
+    display: flex;
+    background-color: rgb(218, 219, 220);
+    margin-left: -15%;
+    margin-top: -25%;
+    width: 210px;
+    height: 40px;
+    text-indent: 1em;
+}
+
+.MUSICVIDEO{
+    display: flex;
+    background-color: rgb(218, 219, 220);
+    margin-left: -5%;
+    margin-top: -25%;
+    width: 210px;
+    height: 40px;
+    text-indent: 1em;
+
+}
+.NEWS{
+    display: flex;
+    background-color: rgb(218, 219, 220);
+    margin-left: 5%;
+    margin-top: -25%;
+    width: 210px;
+    height: 40px;
+    text-indent: 1em;
+
+}
+.YGLIFE{
+    display: flex;
+    background-color: rgb(218, 219, 220);
+    margin-left: 15%;
+    margin-top: -25%;
+    width: 210px;
+    height: 40px;
+    text-indent: 1em;
+
+}
+.sub{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.more1{
+    margin-left: 200%;
+    position: relative;
+    margin-top: -25%;
+    margin-left: 230%;
+    font-size: 10px;
+}
+.more2{
+    margin-left: 200%;
+    position: relative;
+    margin-top: -15%;
+    margin-left: 145%;
+    font-size: 10px;
+}.more3{
+    margin-left: 200%;
+    position: relative;
+    margin-top: -28%;
+    margin-left: 275%;
+    font-size: 10px;
+}.more4{
+    margin-left: 200%;
+    position: relative;
+    margin-top: -25%;
+    margin-left: 240%;
+    font-size: 10px;
+}
+/*표내용*/
+.NOTICE1{
+    display: flex;
+    background-color: rgb(218, 219, 220);
+    margin-left: -15%;
+    margin-top: 90%;
+    width: 210px;
+    height: 120px;
+    flex-direction: column;
+    font-size: 12px;
+    color: #737373;
+    font-style: normal;
+}
+.notice-menu{
+    display: absolute;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    color: white;
+}
+.YGMENU{
+    display: block;
+    position: absolute;
+    background-color: black;
+    width: 80px;
+    margin-left: 25%;
+    margin-right: 0%;
+}
+.ARTISTSMENU{
+    display: block;
+    position: absolute;
+    width: 80px;
+    margin-left: 105%;
+    background-color: #737373;
+}
+.daten{
+    text-align: right;
+    position: relative;
+    margin-top: -10%;
+    margin-right: 5%;
+    color: rgb(177, 176, 176);
+}
+.n1{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+.n2{
+    margin-top: 0%;
+    margin-left: 5%;
+}
+.notice-hr{
+    color: lightgray;
+    width: 180px;
+}
+
+.MUSICVIDEO1{
+    display: flex;
+    background-color: rgb(218, 219, 220);
+    margin-left: -5%;
+    margin-top: 90%;
+    width: 210px;
+    height: 120px;
+    font-size: 12px;
+}
+.bona1{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.treasure{
+    color: gray;
+}
+.bona{
+    width: 100px;
+    height: 70px;
+    align-self: center;
+    margin-left: 10%;
+}
+
+.NEWS1{
+    display: flex;
+    background-color: rgb(218, 219, 220);
+    margin-left: 5%;
+    margin-top: 90%;
+    width: 210px;
+    height: 120px;
+}
+.reboot1{
+    margin-left: 5%;
+    margin-top: 10%;
+    font-size: 12px;
+}
+.reboot2{
+    color: gray;
+}
+.reboot{
+    width: 100px;
+    height: 70px;
+    align-self: center;
+    margin-left: 10%;
+}
+
+.YGLIFE1{
+    display: flex;
+    position: relative;
+    background-color: rgb(218, 219, 220);
+    margin-left: 15%;
+    margin-top: 90%;
+    width: 210px;
+    height: 120px;
+    flex-direction: column;
+    font-size: 12px;
+    color: #737373;
+    font-style: normal;
+}
+
+.ak{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.bp{
+    margin-top: 0%;
+    margin-left: 5%;
+}
+.yglife-hr{
+    color: lightgray;
+    width: 180px;
+}
+
+.date{
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 0%;
+    font-size: 10px;
+    font-style: normal;
+    color: rgb(177, 176, 176);
+}
+
+/*바닥사진*/
+.footimage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.footimage{
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    width: 910px;
+    height: 100px;
+}
+
+/*바닥아이콘*/
+.icon-cont{
+    text-align: right;
+    margin-right: 20%;
+    margin-top: 0%;
+    font-size: 10px;
+    color: lightgray;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+
+}
+.foot-hr{
+    width: 910px;
+}
+
+.logo-foot{
+    margin-left: 20%;
+}
+
+.copyright{
+    position: absolute;
+    font-size: 10px;
+    margin-left: 1%;
+    color:#737373;
+}
+
+.nav-foot{
+    text-align: right;
+    margin-right: 20%;
+    margin-top: -2%;
+    font-size: 10px;
+}
+.highlight{
+    background-color: #be0028;
+    color: white;
+}
+
+/*리스트만들기*/
+.list-cont{
+    position: absolute;
+}
+.list{
+    display: block;
+    background-color:#c8c8c8;
+    border: none;
+    color: white;
+    font-size: 10px;
+    width: 150px;
+    height: 20px;
+    margin-left: 710%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}

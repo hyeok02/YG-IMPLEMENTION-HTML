@@ -55,4 +55,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   
     setInterval(slideNext, 4000);
-  });
+});

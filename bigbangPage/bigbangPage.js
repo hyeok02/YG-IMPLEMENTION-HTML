@@ -35,22 +35,22 @@ document.addEventListener('DOMContentLoaded', function () {
 // 곡 소개 언어 박스
 var KoreanInfo = document.getElementById("KoreanInfoId");
 var EnglishInfo = document.getElementById("EnglishInfoId");
-var ChinseInfo = document.getElementById("ChineseInfoId");
+var ChineseInfo = document.getElementById("ChineseInfoId");
 var JapaneseInfo = document.getElementById("JapaneseInfoId");
 EnglishInfo.style.display = "none";
-ChinseInfo.style.display = "none";
+ChineseInfo.style.display = "none";
 JapaneseInfo.style.display = "none";
 
 function showKorean() {
     if(KoreanInfo.style.display == "none") {
         EnglishInfo.style.display = "none";
-        ChinseInfo.style.display = "none";
+        ChineseInfo.style.display = "none";
         JapaneseInfo.style.display = "none";
         KoreanInfo.style.display = "block";
     }
     else {
         EnglishInfo.style.display = "none";
-        ChinseInfo.style.display = "none";
+        ChineseInfo.style.display = "none";
         JapaneseInfo.style.display = "none";
         KoreanInfo.style.display = "block";
     }
@@ -59,23 +59,15 @@ function showKorean() {
 function showEnglish() {
     if(EnglishInfo.style.display == "none") {
         EnglishInfo.style.display = "block";
-        ChinseInfo.style.display = "none";
+        ChineseInfo.style.display = "none";
         JapaneseInfo.style.display = "none";
         KoreanInfo.style.display = "none";
-        korean.style.color = "gray";
-        korean.style.border = "none";
     }
-    // else {
-    //     EnglishInfo.style.display = "block";
-    //     ChinseInfo.style.display = "none";
-    //     JapaneseInfo.style.display = "none";
-    //     KoreanInfo.style.display = "none";
-    // }
 }
 
 function showChinese() {
-    if(ChinseInfo.style.display == "none") {
-        ChinseInfo.style.display = "block";
+    if(ChineseInfo.style.display == "none") {
+        ChineseInfo.style.display = "block";
         JapaneseInfo.style.display = "none";
         KoreanInfo.style.display = "none";
         EnglishInfo.style.display = "none";
@@ -87,7 +79,7 @@ function showJapanese() {
         JapaneseInfo.style.display = "block";
         KoreanInfo.style.display = "none";
         EnglishInfo.style.display = "none";
-        ChinseInfo.style.display = "none";
+        ChineseInfo.style.display = "none";
     }
 }
 
